@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>WebFinder - Results for {quary}</title>
+
+    <script>
+      const q = new URLSearchParams(location.search).get("q") || "";
+
+      document.title = document.title.replace("{quary}", q);
+    </script>
+  </head>
+  <body>
+    <h1>WebFinder</h1>
+    <p>Results for "{quary}"</p>
+  </body>
+</html>
